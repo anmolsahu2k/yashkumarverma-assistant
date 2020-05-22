@@ -1,7 +1,7 @@
 {
   "name": "greetings-bot",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "description": "a simple susheel sundar greeting bot",
   "author": "Yash Kumar Verma <yk.verma2000@gmail.com>",
   "license": "ISC",
@@ -18,10 +18,14 @@
     "start": "probot run ./index.js",
     "lint": "standard --fix",
     "test": "jest && standard",
-    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage",
+    "build": "mkdir public && echo 'Check /yashkumarverma on github for more' > public/index.html"
   },
   "dependencies": {
-    "probot": "^9.5.3"
+    "probot": "^9.5.3",
+    "probot-commands": "^1.1.0",
+    "probot-metadata": "^1.0.1",
+    "probot-serverless-now": "^2.1.2"
   },
   "devDependencies": {
     "jest": "^24.9.0",

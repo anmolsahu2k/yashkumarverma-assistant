@@ -15,15 +15,15 @@
 default_events:
 # - check_run
 # - check_suite
-# - commit_comment
+- commit_comment
 # - create
 # - delete
-- deployment
+# - deployment
 # - deployment_status
 # - fork
 # - gollum
-# - issue_comment
-# - issues
+- issue_comment
+- issues
 # - label
 # - milestone
 # - member
@@ -36,8 +36,8 @@ default_events:
 # - project_column
 # - public
 - pull_request
-# - pull_request_review
-# - pull_request_review_comment
+- pull_request_review
+- pull_request_review_comment
 # - push
 # - release
 # - repository
@@ -70,7 +70,7 @@ default_permissions:
 
   # Issues and related comments, assignees, labels, and milestones.
   # https://developer.github.com/v3/apps/permissions/#permission-on-issues
-  # issues: write
+  issues: write
 
   # Search repositories, list collaborators, and access repository '.
   # https://developer.github.com/v3/apps/permissions/#metadata-permissions
@@ -98,11 +98,11 @@ default_permissions:
 
   # Commit statuses.
   # https://developer.github.com/v3/apps/permissions/#permission-on-statuses
-  # statuses: read
+  statuses: read
 
   # Organization members and teams.
   # https://developer.github.com/v3/apps/permissions/#permission-on-members
-  # members: read
+  members: read
 
   # View and manage users blocked by the organization.
   # https://developer.github.com/v3/apps/permissions/#permission-on-organization-user-blocking
@@ -126,14 +126,14 @@ default_permissions:
 
 
 # The name of the GitHub App. Defaults to the name specified in package.json
-# name: My Probot App
+name: yashkumarverma's assistant
 
 # The homepage of your GitHub App.
 # url: https://example.com/
 
 # A description of the GitHub App.
-# description: A description of my awesome app
+description: @yashkumarverma's personal assistant
 
 # Set to true when your GitHub App is available to the public or false when it is only accessible to the owner of the app.
 # Default: true
-# public: false
+public: true
